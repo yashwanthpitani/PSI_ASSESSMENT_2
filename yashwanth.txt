@@ -1,0 +1,94 @@
+Problem 1
+val strToFormat = "https://www.google.com"
+val reversedAndToUpperCase = strToFormat.reverse.toUpperCase()
+println(s"$strToFormat reversed and then to upper case = $reversedAndToUppercase")
+
+
+Problem-2
+val donutName = "Vanilla Donut"
+  val quantityPurchased = 10
+  val price = 2.50
+  val donutJson =
+    s"""
+       |{
+       |"donut_name":"$donutName",
+       |"quantity_purchased":"$quantityPurchased",
+       |"price":$price
+       |}
+      """.stripMargin
+  println(donutJson)
+
+
+Problem-3
+import scala.io.StdIn._
+    val name = readLine("Enter your name: ")
+    println("Enter your age: ")
+    val age = readInt()
+    println(Console.BOLD)
+    print("Name: ")
+    print(Console.UNDERLINED)
+    print(name)
+    println(Console.BOLD)
+    print("Age: ")
+    print(Console.RESET)
+    print(age)
+
+
+Problem-4
+ val str = "http://www.google.com"
+    val charToFind = str.charAt(7)
+    println(s"The 8th character literal in $str = $charToFind")
+
+
+Problem-5
+   val glazedDonut = "Glazed Donut"
+    val unitPrice = 2.50
+    val qtyPurchased = 10
+    val totalCost = qtyPurchased * unitPrice
+
+    println(f"""Total cost of $qtyPurchased $glazedDonut${if (qtyPurchased > 1) "s" else ""} = $$$totalCost%1.2f""")
+
+
+Problem-6
+import scala.io.StdIn._
+    val favoriteMovie = readLine("What is your favorite movie of all times?")
+    println(s"$favoriteMovie is totally awesome!")
+
+Problem -7
+object quesTwo {
+  def main(args: Array[String]): Unit = {
+      val list = List("A","BB","CCC","DDDD","EEEEE")
+
+    var count:Int = 0
+    for(i <- list)
+      {
+        var a:String = i
+        for( a <- 1 to a.length() ){
+          count=count+1;
+        }
+        println(i+"-"+count)
+        count=0;
+
+      }
+  }
+}
+
+
+
+Problem-8
+
+object sum 
+{
+def sum(l:List[Int]): Int=
+    {
+		val sum=l.sum
+		sum
+	}	
+	def main(args:Array[String])
+	{
+		val list=List.range(100,150,10)
+        println(s"List with a sequence of number from 100 to 150 excluding 150 with 10 numeric interval: $list")
+		val sequenceSum=sum(list)
+		println(s"Sum of sequence: $sequenceSum")
+	}
+}
