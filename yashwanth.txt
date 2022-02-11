@@ -1,7 +1,13 @@
 Problem 1
-val strToFormat = "https://www.google.com"
-val reversedAndToUpperCase = strToFormat.reverse.toUpperCase()
-println(s"$strToFormat reversed and then to upper case = $reversedAndToUppercase")
+object StrRev
+{
+    def main(args: Array[String]) 
+    {
+          
+        val str1: String = "https://www.google.com"
+        println(str1.reverse.toUpperCase());
+    }
+}
 
 
 Problem-2
